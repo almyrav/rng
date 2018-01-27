@@ -1,0 +1,35 @@
+@charset "utf-8";
+/* CSS Document */
+*{padding: 5px;color:#fff;}
+body{ 
+  background-image: url('Carrie.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+}
+#whole{
+  margin-top: 5%
+}
+button,input{color: red; opacity:.5;}
+address a:link{color:  #ff0000;}
+a:visited{color: #990000;}
+a:focus{color:  #330000;}
+label, #number{
+  font-size: 20px;
+  font-weight: bold;
+}
+label{font-size: 24px;}
+
+/*fix nav and content in extra small devices, e.g. smartphones*/
+@media (max-width: 767px){
+	
+}
+
+/*fix nav and content in small devices, e.g. tablets*/
+@media(min-width:768px) and (max-width: 991px) {
+
+	
+}
+/*medium devices e.g., tablets*/
+@media(min-width:992px) and (max-width: 1199px) {
+	
+}
