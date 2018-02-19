@@ -6,13 +6,13 @@ function getRndInteger(min, max) {
 
 $(document).ready(function(){
   $('button[name="roll"]').click(function(){
-    var maxNum = $('#max').val();
-    var minNum = $('#min').val();
+    var maxNum = parseInt($('#max').val());
+    var minNum = parseInt($('#min').val());
     if(maxNum<0 || minNum<0){
       $('#number').text('No negative numbers please!');
       return;
     } 
-    if(Math.abs(minNum)>=Math.abs(maxNum)){
+    if(minNum >= maxNum){
       $('#number').text('Max must be greater than min!');
       return;
     } 
