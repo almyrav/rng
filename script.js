@@ -5,6 +5,8 @@ function getRndInteger(min, max) {
 }
 
 $(document).ready(function(){
+  const video = document.getElementById('bg-video');
+  video.playbackRate = 0.3;
   $('button[name="roll"]').click(function(){
     var maxNum = parseInt($('#max').val());
     var minNum = parseInt($('#min').val());
