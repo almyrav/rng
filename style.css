@@ -2,10 +2,21 @@
 /* CSS Document */
 *{padding: 5px;}
 body{ 
-  background-color:#fff;
+  background-color:#000;
+  color: #7B3782;
+}
+#bg-video{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  z-index: -100;
 }
 #whole{
-  margin-top: 5%
+  margin: auto;
+  margin-top: 10%;
+  width: 50%;
 }
 address a:link{color:  #ff0000;}
 a:visited{color: #990000;}
@@ -14,18 +25,44 @@ label, #number{
   font-size: 20px;
   font-weight: bold;
 }
+#number{
+  background-color: #7B3782;
+  display: block;
+  min-width: 500px;
+  color: #FFF;
+  opacity: .6;
+  margin-top: 10px;
+}
+#number:hover{
+  opacity: 1;
+}
 label{font-size: 24px;}
-
+footer, label{
+  color: #C76E52;
+}
 /*fix nav and content in extra small devices, e.g. smartphones*/
 @media (max-width: 767px){
+  #whole, #number, input{
+    width: 100%;
+  }
+  #number{
+    min-width: 0;
+    word-wrap: break-word;
+  }
+  label{
+    display: block;
+  }
 }
 
 /*fix nav and content in small devices, e.g. tablets*/
 @media(min-width:768px) and (max-width: 991px) {
-
-	
+  #whole{
+    width: 80%;
+  }
 }
 /*medium devices e.g., tablets*/
 @media(min-width:992px) and (max-width: 1199px) {
-	
+	#whole{
+    width: 80%;
+  }
 }

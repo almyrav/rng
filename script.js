@@ -16,7 +16,7 @@ $(document).ready(function(){
       $('#number').text('Max must be greater than min!');
       return;
     } 
-     $('#number').text('You rolled a '+getRndInteger(minNum, maxNum)+'.');
+     $('#number').text('You rolled a(n) '+getRndInteger(minNum, maxNum)+'.');
   });
 });
 
